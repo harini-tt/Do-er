@@ -23,6 +23,7 @@
 		87EC1934268BCEED0077064F /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC1933268BCEED0077064F /* GroupsViewController.swift */; };
 		A875F7CA268BC77100747C99 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875F7C9268BC77100747C99 /* SignUpViewController.swift */; };
 		A875F7CC268BC8E400747C99 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875F7CB268BC8E400747C99 /* LogInViewController.swift */; };
+		A8A2522E268CEFD700E95D09 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A2522D268CEFD700E95D09 /* ChallengesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		87EC1933268BCEED0077064F /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		A875F7C9268BC77100747C99 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A875F7CB268BC8E400747C99 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		A8A2522D268CEFD700E95D09 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				871EC77C268BB98B001DD157 /* SceneDelegate.swift */,
 				871EC77E268BB98B001DD157 /* ViewController.swift */,
 				871EC780268BB98B001DD157 /* Main.storyboard */,
+				A8A2522D268CEFD700E95D09 /* ChallengesViewController.swift */,
 				8728EAD3268CE57C0067C260 /* ExplorePageViewController.swift */,
 				8728EAD5268CE5B30067C260 /* MyGroupsViewController.swift */,
 				8728EAD1268CE5420067C260 /* BoardViewController.swift */,
@@ -169,6 +172,7 @@
 			files = (
 				87EC1934268BCEED0077064F /* GroupsViewController.swift in Sources */,
 				871EC77F268BB98B001DD157 /* ViewController.swift in Sources */,
+				A8A2522E268CEFD700E95D09 /* ChallengesViewController.swift in Sources */,
 				871EC77B268BB98B001DD157 /* AppDelegate.swift in Sources */,
 				A875F7CC268BC8E400747C99 /* LogInViewController.swift in Sources */,
 				8728EACE268CE4BA0067C260 /* CreateAGroupViewController.swift in Sources */,
