@@ -14,13 +14,13 @@
 		871EC785268BB98B001DD157 /* Do_er.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 871EC783268BB98B001DD157 /* Do_er.xcdatamodeld */; };
 		871EC787268BB992001DD157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 871EC786268BB992001DD157 /* Assets.xcassets */; };
 		871EC78A268BB992001DD157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871EC788268BB992001DD157 /* LaunchScreen.storyboard */; };
+		8728EACC268CE45E0067C260 /* InputCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728EACB268CE45E0067C260 /* InputCodeViewController.swift */; };
+		8728EACE268CE4BA0067C260 /* CreateAGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728EACD268CE4B90067C260 /* CreateAGroupViewController.swift */; };
+		8728EAD0268CE50A0067C260 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728EACF268CE50A0067C260 /* ProfileViewController.swift */; };
+		8728EAD2268CE5420067C260 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728EAD1268CE5420067C260 /* BoardViewController.swift */; };
+		8728EAD4268CE57C0067C260 /* ExplorePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728EAD3268CE57C0067C260 /* ExplorePageViewController.swift */; };
+		8728EAD6268CE5B30067C260 /* MyGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728EAD5268CE5B30067C260 /* MyGroupsViewController.swift */; };
 		87EC1934268BCEED0077064F /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC1933268BCEED0077064F /* GroupsViewController.swift */; };
-		A8623D9D268C17B000B9DE1D /* InputCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8623D9C268C17B000B9DE1D /* InputCodeViewController.swift */; };
-		A8623D9F268C186300B9DE1D /* CreateAGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8623D9E268C186300B9DE1D /* CreateAGroupViewController.swift */; };
-		A8623DA1268C18FD00B9DE1D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8623DA0268C18FD00B9DE1D /* ProfileViewController.swift */; };
-		A8623DA3268C1A4800B9DE1D /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8623DA2268C1A4700B9DE1D /* BoardViewController.swift */; };
-		A8623DA5268C1B9300B9DE1D /* ExplorePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8623DA4268C1B9300B9DE1D /* ExplorePageViewController.swift */; };
-		A8623DA7268C1D2500B9DE1D /* MyGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8623DA6268C1D2500B9DE1D /* MyGroupsViewController.swift */; };
 		A875F7CA268BC77100747C99 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875F7C9268BC77100747C99 /* SignUpViewController.swift */; };
 		A875F7CC268BC8E400747C99 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875F7CB268BC8E400747C99 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,13 +35,13 @@
 		871EC786268BB992001DD157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		871EC789268BB992001DD157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		871EC78B268BB992001DD157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8728EACB268CE45E0067C260 /* InputCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCodeViewController.swift; sourceTree = "<group>"; };
+		8728EACD268CE4B90067C260 /* CreateAGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAGroupViewController.swift; sourceTree = "<group>"; };
+		8728EACF268CE50A0067C260 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8728EAD1268CE5420067C260 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		8728EAD3268CE57C0067C260 /* ExplorePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageViewController.swift; sourceTree = "<group>"; };
+		8728EAD5268CE5B30067C260 /* MyGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsViewController.swift; sourceTree = "<group>"; };
 		87EC1933268BCEED0077064F /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
-		A8623D9C268C17B000B9DE1D /* InputCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCodeViewController.swift; sourceTree = "<group>"; };
-		A8623D9E268C186300B9DE1D /* CreateAGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAGroupViewController.swift; sourceTree = "<group>"; };
-		A8623DA0268C18FD00B9DE1D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		A8623DA2268C1A4700B9DE1D /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
-		A8623DA4268C1B9300B9DE1D /* ExplorePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageViewController.swift; sourceTree = "<group>"; };
-		A8623DA6268C1D2500B9DE1D /* MyGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsViewController.swift; sourceTree = "<group>"; };
 		A875F7C9268BC77100747C99 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A875F7CB268BC8E400747C99 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,13 +80,13 @@
 				871EC77C268BB98B001DD157 /* SceneDelegate.swift */,
 				871EC77E268BB98B001DD157 /* ViewController.swift */,
 				871EC780268BB98B001DD157 /* Main.storyboard */,
-				A8623DA6268C1D2500B9DE1D /* MyGroupsViewController.swift */,
-				A8623DA4268C1B9300B9DE1D /* ExplorePageViewController.swift */,
-				A8623DA2268C1A4700B9DE1D /* BoardViewController.swift */,
-				A8623DA0268C18FD00B9DE1D /* ProfileViewController.swift */,
-				A8623D9E268C186300B9DE1D /* CreateAGroupViewController.swift */,
-				A8623D9C268C17B000B9DE1D /* InputCodeViewController.swift */,
+				8728EAD3268CE57C0067C260 /* ExplorePageViewController.swift */,
+				8728EAD5268CE5B30067C260 /* MyGroupsViewController.swift */,
+				8728EAD1268CE5420067C260 /* BoardViewController.swift */,
+				8728EACF268CE50A0067C260 /* ProfileViewController.swift */,
 				87EC1933268BCEED0077064F /* GroupsViewController.swift */,
+				8728EACB268CE45E0067C260 /* InputCodeViewController.swift */,
+				8728EACD268CE4B90067C260 /* CreateAGroupViewController.swift */,
 				A875F7CB268BC8E400747C99 /* LogInViewController.swift */,
 				A875F7C9268BC77100747C99 /* SignUpViewController.swift */,
 				871EC786268BB992001DD157 /* Assets.xcassets */,
@@ -168,17 +168,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				87EC1934268BCEED0077064F /* GroupsViewController.swift in Sources */,
-				A8623DA3268C1A4800B9DE1D /* BoardViewController.swift in Sources */,
 				871EC77F268BB98B001DD157 /* ViewController.swift in Sources */,
-				A8623DA1268C18FD00B9DE1D /* ProfileViewController.swift in Sources */,
-				A8623D9D268C17B000B9DE1D /* InputCodeViewController.swift in Sources */,
-				A8623D9F268C186300B9DE1D /* CreateAGroupViewController.swift in Sources */,
 				871EC77B268BB98B001DD157 /* AppDelegate.swift in Sources */,
 				A875F7CC268BC8E400747C99 /* LogInViewController.swift in Sources */,
+				8728EACE268CE4BA0067C260 /* CreateAGroupViewController.swift in Sources */,
+				8728EACC268CE45E0067C260 /* InputCodeViewController.swift in Sources */,
 				871EC77D268BB98B001DD157 /* SceneDelegate.swift in Sources */,
-				A8623DA5268C1B9300B9DE1D /* ExplorePageViewController.swift in Sources */,
 				871EC785268BB98B001DD157 /* Do_er.xcdatamodeld in Sources */,
-				A8623DA7268C1D2500B9DE1D /* MyGroupsViewController.swift in Sources */,
+				8728EAD0268CE50A0067C260 /* ProfileViewController.swift in Sources */,
+				8728EAD2268CE5420067C260 /* BoardViewController.swift in Sources */,
+				8728EAD4268CE57C0067C260 /* ExplorePageViewController.swift in Sources */,
+				8728EAD6268CE5B30067C260 /* MyGroupsViewController.swift in Sources */,
 				A875F7CA268BC77100747C99 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
