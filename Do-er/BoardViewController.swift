@@ -8,7 +8,17 @@
 import UIKit
 
 class BoardViewController: UIViewController {
-
+    
+    @IBOutlet weak var CommentField: UITextField!
+    
+    @IBAction func commentPostButton(_ sender: UIButton) {
+        if let userComment = CommentField.text {
+            comment.text = userComment
+        }
+    }
+    
+    @IBOutlet weak var comment: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

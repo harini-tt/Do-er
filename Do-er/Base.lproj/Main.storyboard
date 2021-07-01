@@ -121,6 +121,7 @@
                                     <color key="titleColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="signUpButton:" destination="JLG-bL-cIV" eventType="touchUpInside" id="EOc-Aq-hpT"/>
                                     <segue destination="5eX-Dd-nDl" kind="presentation" modalPresentationStyle="fullScreen" id="1pf-hq-H68"/>
                                 </connections>
                             </button>
@@ -129,6 +130,11 @@
                         <color key="backgroundColor" red="0.58823529409999997" green="0.78823529410000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kun-si-omL"/>
+                    <connections>
+                        <outlet property="emailField" destination="bo7-Su-ZYy" id="WHL-sf-XSU"/>
+                        <outlet property="passwordTextField" destination="kvq-TZ-LzT" id="oq3-8h-IhJ"/>
+                        <outlet property="usernameField" destination="ol7-jJ-XjN" id="KLG-v9-49b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eam-RP-s5T" sceneMemberID="firstResponder"/>
             </objects>
@@ -435,7 +441,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3r-uR-YJE">
-                                <rect key="frame" x="62" y="585" width="274" height="21"/>
+                                <rect key="frame" x="62" y="556" width="274" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -463,6 +469,9 @@
                                 <state key="normal" title="Post" backgroundImage="rectangle.fill" catalog="system">
                                     <color key="titleColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="commentPostButton:" destination="MPk-jL-JCj" eventType="touchUpInside" id="UKM-v3-5jE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va1-ec-Nxl">
                                 <rect key="frame" x="46" y="207" width="323" height="408"/>
@@ -479,10 +488,14 @@
                     <navigationItem key="navigationItem" id="TCg-tf-J5d">
                         <barButtonItem key="backBarButtonItem" title="Back" id="4KE-uJ-Xti"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="CommentField" destination="z1B-zC-Wli" id="aco-H2-OeY"/>
+                        <outlet property="comment" destination="va1-ec-Nxl" id="ZcC-1t-tne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swx-u2-4Cj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="394" y="1507"/>
+            <point key="canvasLocation" x="392.75362318840581" y="1506.6964285714284"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="evX-iC-kf9">
