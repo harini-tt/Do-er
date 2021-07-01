@@ -171,6 +171,9 @@
                         <color key="backgroundColor" red="0.58823529409999997" green="0.78823529410000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="OG5-Av-kQz"/>
+                    <connections>
+                        <outlet property="userProfileTitle" destination="U6l-0j-jIw" id="2Oi-Ue-Ycb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXq-Di-Sed" sceneMemberID="firstResponder"/>
             </objects>
@@ -805,6 +808,9 @@
                                         <state key="normal">
                                             <imageReference key="image" image="rectangle" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="completeButtonPressed:" destination="Id2-oo-64r" eventType="touchUpInside" id="20l-kc-1NO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOS-0A-NUD">
                                         <rect key="frame" x="0.0" y="65" width="29.5" height="22"/>
@@ -851,15 +857,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vaz-S6-K4R"/>
+                    <connections>
+                        <outlet property="buttonsDisplay" destination="Ayu-F5-rZk" id="dCM-uY-ped"/>
+                        <outlet property="firstChallenge" destination="fBu-sm-0UD" id="1QW-B8-6BW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Te3-dk-6Ou" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-33.333333333333336" y="766.74107142857144"/>
         </scene>
-        <!--Player View Controller-->
+        <!--Add Challenge View Controller-->
         <scene sceneID="2vG-Pl-G1a">
             <objects>
-                <viewController id="nZh-rr-2Ax" customClass="AVPlayerViewController" sceneMemberID="viewController">
+                <viewController id="nZh-rr-2Ax" customClass="AddChallengeViewController" customModule="Do_er" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Re6-p2-TnA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -873,6 +883,9 @@
                                 <state key="normal" title="Add" backgroundImage="rectangle.fill" catalog="system">
                                     <color key="titleColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addChallengeTapped:" destination="nZh-rr-2Ax" eventType="touchUpInside" id="yIS-hH-UKk"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2q8-yw-CjU">
                                 <rect key="frame" x="80" y="421" width="255" height="34"/>
@@ -899,6 +912,9 @@
                         <color key="backgroundColor" red="0.58823529409999997" green="0.78823529410000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="toc-k2-iLW"/>
+                    <connections>
+                        <outlet property="challengeDescription" destination="2q8-yw-CjU" id="qeb-HU-DYj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlM-Hu-Wy1" sceneMemberID="firstResponder"/>
             </objects>

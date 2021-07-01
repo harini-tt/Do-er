@@ -9,6 +9,25 @@ import UIKit
 
 class AddChallengeViewController: UIViewController {
 
+    @IBOutlet weak var challengeDescription: UITextField!
+    
+    @IBAction func addChallengeTapped(_ sender: UIButton) {
+        // we have to grab this view context to be able to work with Core Data
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+
+            let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
+            
+            if let groupChallenge = challengeDescription.text {
+                newChallenge.challenge = groupChallenge
+                print(newChallenge.challenge)
+            }
+
+            try? context.save()
+
+            navigationController?.popViewController(animated: true)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

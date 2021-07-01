@@ -19,15 +19,18 @@ class SignUpViewController: UIViewController {
         // we have to grab this view context to be able to work with Core Data
           if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
 
-            // we are creating a new ToDoCD object here, naming it toDo
+            // we are creating a new user object here, naming it user
             let user = DoerLoginInfo(entity: DoerLoginInfo.entity(), insertInto: context)
 
-            // if the titleTextField has text, we will call that text titleText
+            // if the emailField has text, we will call that text userEmail
             if let userEmail = emailField.text {
-                // we will take the titleText and assign that value to toDo.name
-                // this .name and .important came from the attributes you typed in on the Core Data page!
-                user.name = titleText
-                toDo.important = importantSwitch.isOn
+                if let userUsername = usernameField.text {
+                    if let userPassword = passwordTextField.text {
+                        user.email = userEmail
+                        user.username = userUsername
+                        user.password = userPassword
+                    }
+                }
             }
 
             try? context.save()

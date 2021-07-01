@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ChallengesInGroup" representedClassName="ChallengesInGroup" syncable="YES" codeGenerationType="class">
+        <attribute name="challenge" optional="YES" attributeType="String" defaultValueString="learn Swift"/>
+    </entity>
     <entity name="DoerLoginInfo" representedClassName="DoerLoginInfo" syncable="YES" codeGenerationType="class">
         <attribute name="email" attributeType="String"/>
         <attribute name="password" attributeType="String"/>
@@ -7,5 +10,6 @@
     </entity>
     <elements>
         <element name="DoerLoginInfo" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="ChallengesInGroup" positionX="-63" positionY="9" width="128" height="44"/>
     </elements>
 </model>
