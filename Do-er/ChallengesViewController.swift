@@ -13,13 +13,55 @@ class ChallengesViewController: UIViewController {
     
     @IBOutlet weak var firstChallenge: UILabel!
     
+    @IBOutlet weak var secondChallenge: UILabel!
+    
+    @IBOutlet weak var thirdChallenge: UILabel!
+    
+    @IBOutlet weak var fourthChallenge: UILabel!
+    
     @IBOutlet weak var buttonsDisplay: UIStackView!
     
-    @IBAction func completeButtonPressed(_ sender: UIButton) {
+    @IBAction func completeButton1Pressed(_ sender: UIButton) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            let theChallenge = challenges[0]
+            let theChallenge = try challenges[0]
             context.delete(theChallenge)
-            firstChallenge.text = "___________________________"
+            firstChallenge.text = challenges[1].challenge
+            secondChallenge.text = challenges[2].challenge
+            thirdChallenge.text = challenges[3].challenge
+            fourthChallenge.text = "___________________________"
+        }
+    }
+    
+    @IBAction func completeButton2Pressed(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let theChallenge = challenges[1]
+            context.delete(theChallenge)
+            firstChallenge.text = challenges[0].challenge
+            secondChallenge.text = challenges[2].challenge
+            thirdChallenge.text = challenges[3].challenge
+            fourthChallenge.text = "___________________________"
+        }
+    }
+    
+    @IBAction func completeButton3Pressed(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let theChallenge = challenges[2]
+            context.delete(theChallenge)
+            firstChallenge.text = challenges[0].challenge
+            secondChallenge.text = challenges[1].challenge
+            thirdChallenge.text = challenges[3].challenge
+            fourthChallenge.text = "___________________________"
+        }
+    }
+    
+    @IBAction func completeButton4Pressed(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let theChallenge = challenges[3]
+            context.delete(theChallenge)
+            firstChallenge.text = challenges[0].challenge
+            secondChallenge.text = challenges[1].challenge
+            thirdChallenge.text = challenges[2].challenge
+            fourthChallenge.text = "___________________________"
         }
     }
     
@@ -38,12 +80,52 @@ class ChallengesViewController: UIViewController {
             if let coreDataChallenges = try? context.fetch(ChallengesInGroup.fetchRequest()) as? [ChallengesInGroup] {
                 print("test2")
                 challenges = coreDataChallenges
+                if firstChallenge.text == "___________________________" {
+                    let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
+                    newChallenge.challenge = "Default challenge"
+                    try? context.save()
+                }
+                
+                if secondChallenge.text == "___________________________" {
+                    let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
+                    newChallenge.challenge = "Default challenge"
+                    try? context.save()
+                }
+                
+                if thirdChallenge.text == "___________________________" {
+                    let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
+                    newChallenge.challenge = "Default challenge"
+                    try? context.save()
+                }
+                
+                if fourthChallenge.text == "___________________________" {
+                    let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
+                    newChallenge.challenge = "Default challenge"
+                    try? context.save()
+                }
+                
                 firstChallenge.text = challenges[0].challenge
+                secondChallenge.text = challenges[1].challenge
+                thirdChallenge.text = challenges[2].challenge
+                fourthChallenge.text = challenges[3].challenge
                 print(challenges.count)
             }
         }
     }
     
+//    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+//
+//        let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
+//
+//        if let groupChallenge = challengeDescription.text {
+//            newChallenge.challenge = groupChallenge
+//            print(newChallenge.challenge)
+//        }
+//
+//        try? context.save()
+//
+//        navigationController?.popViewController(animated: true)
+//    }
 
     /*
     // MARK: - Navigation

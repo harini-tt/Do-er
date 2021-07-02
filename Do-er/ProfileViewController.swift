@@ -7,14 +7,24 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
 //    var currentUser : [DoerLoginInfo] = []
     
+    var imagePicker = UIImagePickerController()
+    
     @IBOutlet weak var userProfileTitle: UILabel!
+    
+    @IBOutlet weak var userProfilePic: UIImageView!
+    
+    @IBAction func choosePictureTapped(_ sender: UIButton) {
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker.delegate = self
 //        getUser()
         // Do any additional setup after loading the view.
     }
@@ -28,6 +38,14 @@ class ProfileViewController: UIViewController {
 //        }
 //    }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            // Whenever you pick up an image, it goes into the info Dictionary and you are getting your image out of the dictionary and setting it equal to the outlet that we have
+            if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+                userProfilePic.image = selectedImage
+            }
+            //we also want to take it back to the view controller
+        imagePicker.dismiss(animated: true, completion: nil) // nil because we do not want it to do anything else
+    }
 
     /*
     // MARK: - Navigation

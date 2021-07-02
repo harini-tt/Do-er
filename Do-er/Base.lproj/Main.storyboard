@@ -166,12 +166,27 @@
                                 <color key="textColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXf-yg-GVC">
+                                <rect key="frame" x="96" y="679" width="206" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="tintColor" red="1" green="0.90196078430000004" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Choose Picture" backgroundImage="rectangle.fill" catalog="system">
+                                    <color key="titleColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choosePictureTapped:" destination="bmE-sG-5Cp" eventType="touchUpInside" id="tVn-Aq-sf8"/>
+                                    <action selector="commentPostButton:" destination="MPk-jL-JCj" eventType="touchUpInside" id="pM7-zC-KfE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ei6-W0-rwx"/>
                         <color key="backgroundColor" red="0.58823529409999997" green="0.78823529410000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="OG5-Av-kQz"/>
                     <connections>
+                        <outlet property="userProfilePic" destination="KPu-xF-ade" id="tPJ-3F-lzO"/>
                         <outlet property="userProfileTitle" destination="U6l-0j-jIw" id="2Oi-Ue-Ycb"/>
                     </connections>
                 </viewController>
@@ -361,6 +376,18 @@
                                 <color key="textColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCY-bT-jOB">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="tintColor" red="1" green="0.90196078430000004" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign Up" backgroundImage="rectangle.fill" catalog="system">
+                                    <color key="titleColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButton:" destination="JLG-bL-cIV" eventType="touchUpInside" id="ppd-2K-8Q9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="42x-Ep-NQo"/>
                         <color key="backgroundColor" red="0.58823529409999997" green="0.78823529410000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -809,7 +836,7 @@
                                             <imageReference key="image" image="rectangle" catalog="system" symbolScale="large"/>
                                         </state>
                                         <connections>
-                                            <action selector="completeButtonPressed:" destination="Id2-oo-64r" eventType="touchUpInside" id="20l-kc-1NO"/>
+                                            <action selector="completeButton1Pressed:" destination="Id2-oo-64r" eventType="touchUpInside" id="6Mh-nc-Djr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOS-0A-NUD">
@@ -817,18 +844,27 @@
                                         <state key="normal">
                                             <imageReference key="image" image="rectangle" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="completeButton2Pressed:" destination="Id2-oo-64r" eventType="touchUpInside" id="bbC-N8-6rS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P04-zn-Gx9">
                                         <rect key="frame" x="0.0" y="130" width="29.5" height="22"/>
                                         <state key="normal">
                                             <imageReference key="image" image="rectangle" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="completeButton3Pressed:" destination="Id2-oo-64r" eventType="touchUpInside" id="QSP-D9-nfa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNz-Dr-uIU">
                                         <rect key="frame" x="0.0" y="195" width="29.5" height="22"/>
                                         <state key="normal">
                                             <imageReference key="image" image="rectangle" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="completeButton4Pressed:" destination="Id2-oo-64r" eventType="touchUpInside" id="1XN-C8-tK0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -860,6 +896,9 @@
                     <connections>
                         <outlet property="buttonsDisplay" destination="Ayu-F5-rZk" id="dCM-uY-ped"/>
                         <outlet property="firstChallenge" destination="fBu-sm-0UD" id="1QW-B8-6BW"/>
+                        <outlet property="fourthChallenge" destination="I14-jT-EKS" id="bER-cp-UfN"/>
+                        <outlet property="secondChallenge" destination="BpT-zl-ajb" id="uWP-Z8-fQG"/>
+                        <outlet property="thirdChallenge" destination="QxL-jI-hLA" id="8aY-cV-Xhg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Te3-dk-6Ou" sceneMemberID="firstResponder"/>
@@ -997,7 +1036,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WAI-Bh-g6d"/>
+        <segue reference="qBU-rg-9HS"/>
         <segue reference="1pf-hq-H68"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.94117647059999998" green="0.42352941179999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
