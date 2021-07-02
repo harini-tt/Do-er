@@ -9,6 +9,8 @@ import UIKit
 
 class AddChallengeViewController: UIViewController {
 
+    var challenges : [ChallengesInGroup] = []
+    
     @IBOutlet weak var challengeDescription: UITextField!
     
     @IBAction func addChallengeTapped(_ sender: UIButton) {
@@ -18,8 +20,21 @@ class AddChallengeViewController: UIViewController {
             let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
             
             if let groupChallenge = challengeDescription.text {
-                newChallenge.challenge = groupChallenge
-                print(newChallenge.challenge)
+                if challenges[1].challenge == "___________________________" {
+                    context.delete(challenges[1])
+                    context.delete(challenges[2])
+                    context.delete(challenges[3])
+                    newChallenge.challenge = groupChallenge
+                } else if challenges[2].challenge == "___________________________" {
+                    context.delete(challenges[2])
+                    context.delete(challenges[3])
+                    newChallenge.challenge = groupChallenge
+                } else if challenges[3].challenge == "___________________________" {
+                    context.delete(challenges[3])
+                    newChallenge.challenge = groupChallenge
+                } else {
+                    newChallenge.challenge = groupChallenge
+                }
             }
 
             try? context.save()

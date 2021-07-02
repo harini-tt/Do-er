@@ -29,6 +29,7 @@ class ChallengesViewController: UIViewController {
             secondChallenge.text = challenges[2].challenge
             thirdChallenge.text = challenges[3].challenge
             fourthChallenge.text = "___________________________"
+            try? context.save()
         }
     }
     
@@ -40,6 +41,7 @@ class ChallengesViewController: UIViewController {
             secondChallenge.text = challenges[2].challenge
             thirdChallenge.text = challenges[3].challenge
             fourthChallenge.text = "___________________________"
+            try? context.save()
         }
     }
     
@@ -51,6 +53,7 @@ class ChallengesViewController: UIViewController {
             secondChallenge.text = challenges[1].challenge
             thirdChallenge.text = challenges[3].challenge
             fourthChallenge.text = "___________________________"
+            try? context.save()
         }
     }
     
@@ -62,6 +65,7 @@ class ChallengesViewController: UIViewController {
             secondChallenge.text = challenges[1].challenge
             thirdChallenge.text = challenges[2].challenge
             fourthChallenge.text = "___________________________"
+            try? context.save()
         }
     }
     
@@ -80,34 +84,44 @@ class ChallengesViewController: UIViewController {
             if let coreDataChallenges = try? context.fetch(ChallengesInGroup.fetchRequest()) as? [ChallengesInGroup] {
                 print("test2")
                 challenges = coreDataChallenges
-                if firstChallenge.text == "___________________________" {
+                
+                if challenges.count == 0 {
                     let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
                     newChallenge.challenge = "Default challenge"
                     try? context.save()
+                    firstChallenge.text = challenges[0].challenge
+                }   else {
+                    firstChallenge.text = challenges[0].challenge
                 }
                 
-                if secondChallenge.text == "___________________________" {
+                if challenges.count == 1 {
                     let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
-                    newChallenge.challenge = "Default challenge"
+                    newChallenge.challenge = "___________________________"
                     try? context.save()
+                    secondChallenge.text = challenges[1].challenge
+                }   else {
+                    secondChallenge.text = challenges[1].challenge
                 }
                 
-                if thirdChallenge.text == "___________________________" {
+                if challenges.count == 2 {
                     let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
-                    newChallenge.challenge = "Default challenge"
+                    newChallenge.challenge = "___________________________"
                     try? context.save()
+                    thirdChallenge.text = challenges[2].challenge
+                }   else {
+                    thirdChallenge.text = challenges[2].challenge
                 }
                 
-                if fourthChallenge.text == "___________________________" {
+                if challenges.count == 3 {
                     let newChallenge = ChallengesInGroup(entity: ChallengesInGroup.entity(), insertInto: context)
-                    newChallenge.challenge = "Default challenge"
+                    newChallenge.challenge = "___________________________"
                     try? context.save()
+                    print(challenges.count)
+                    fourthChallenge.text = challenges[3].challenge
+                }   else {
+                    fourthChallenge.text = challenges[3].challenge
                 }
                 
-                firstChallenge.text = challenges[0].challenge
-                secondChallenge.text = challenges[1].challenge
-                thirdChallenge.text = challenges[2].challenge
-                fourthChallenge.text = challenges[3].challenge
                 print(challenges.count)
             }
         }
