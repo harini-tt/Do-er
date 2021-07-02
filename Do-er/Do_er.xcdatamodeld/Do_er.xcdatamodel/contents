@@ -8,8 +8,13 @@
         <attribute name="password" attributeType="String"/>
         <attribute name="username" attributeType="String"/>
     </entity>
+    <entity name="FirstGroup" representedClassName="FirstGroup" syncable="YES" codeGenerationType="class">
+        <attribute name="groupCode" optional="YES" attributeType="String" defaultValueString="groupcode"/>
+        <attribute name="groupName" optional="YES" attributeType="String" defaultValueString="Example Group"/>
+    </entity>
     <elements>
-        <element name="DoerLoginInfo" positionX="-63" positionY="-18" width="128" height="74"/>
         <element name="ChallengesInGroup" positionX="-63" positionY="9" width="128" height="44"/>
+        <element name="DoerLoginInfo" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="FirstGroup" positionX="-54" positionY="18" width="128" height="59"/>
     </elements>
 </model>

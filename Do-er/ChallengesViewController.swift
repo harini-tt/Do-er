@@ -19,7 +19,7 @@ class ChallengesViewController: UIViewController {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             let theChallenge = challenges[0]
             context.delete(theChallenge)
-            firstChallenge.text = "_______"
+            firstChallenge.text = "___________________________"
         }
     }
     
