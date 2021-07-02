@@ -281,8 +281,7 @@
                                     <color key="titleColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="joinButtonPressed:" destination="C8P-Za-ub5" eventType="touchUpInside" id="k0l-fc-0km"/>
-                                    <segue destination="kkm-oU-M8W" kind="show" id="QP3-4l-2F0"/>
+                                    <segue destination="kkm-oU-M8W" kind="show" id="WAI-Bh-g6d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -290,9 +289,6 @@
                         <color key="backgroundColor" red="0.58823529409999997" green="0.78823529410000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="o8a-0k-1D7"/>
-                    <connections>
-                        <outlet property="inputCodeField" destination="RWN-kI-hXe" id="Z82-by-PEP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5k-t5-oU2" sceneMemberID="firstResponder"/>
             </objects>
@@ -1001,7 +997,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QP3-4l-2F0"/>
+        <segue reference="WAI-Bh-g6d"/>
         <segue reference="1pf-hq-H68"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.94117647059999998" green="0.42352941179999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
